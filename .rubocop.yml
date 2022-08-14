@@ -10,6 +10,10 @@ AllCops:
     - 'bin/*'
     - 'tmp/*'
     - 'spec/spec_helper.rb'
-    - 'spec/dummy/**/*'
+    - 'spec/dummy/config.ru'
+    - 'spec/dummy/bin/**/*'
+    - 'spec/dummy/config/**/*'
+    - 'spec/dummy/db/**/*'
+    - 'spec/dummy/tmp/**/*'
 
   NewCops: enable
