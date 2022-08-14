@@ -1,0 +1,15 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.7.6
+
+  Exclude:
+    - 'bin/*'
+    - 'tmp/*'
+    - 'spec/spec_helper.rb'
+    - 'spec/dummy/**/*'
+
+  NewCops: enable
