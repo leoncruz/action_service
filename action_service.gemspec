@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'rails', '~> 5.2.8', '>= 5.2.8.1'
 
+  spec.add_development_dependency 'byebug'
   spec.add_development_dependency 'rspec-rails'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'rubocop-performance'
