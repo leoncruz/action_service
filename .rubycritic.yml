@@ -3,5 +3,6 @@ no_browser: true
 minimum_score: 95
 
 paths:
-  - 'lib/**/*'
-  - 'spec/lib/**/*'
+  - 'lib/'
+  - 'spec/lib/'
+  - 'spec/dummy/'
