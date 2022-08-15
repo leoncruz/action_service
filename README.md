@@ -1,3 +1,9 @@
+![fluxo de trabalho de exemplo](https://github.com/leoncruz/action_service/actions/workflows/rubocop.yml/badge.svg)
+
+![fluxo de trabalho de exemplo](https://github.com/leoncruz/action_service/actions/workflows/rubycritc.yml/badge.svg)
+
+![fluxo de trabalho de exemplo](https://github.com/leoncruz/action_service/actions/workflows/tests.yml/badge.svg)
+
 # ActionService
 Short description and motivation.
 
