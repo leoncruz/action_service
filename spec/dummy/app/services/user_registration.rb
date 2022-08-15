@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UserRegistration < ActionService::Base
   attr_accessor :name, :email, :phone
 
