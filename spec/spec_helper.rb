@@ -22,6 +22,7 @@ SimpleCov.minimum_coverage 90
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require "rails/test_help"
 require 'action_service'
+require 'byebug'
 
 Rails.backtrace_cleaner.remove_silencers!
 
