@@ -6,7 +6,7 @@ require 'action_service/faliure'
 module ActionService
   # Module for execute actions from ActionService
   module Execution
-    def execute(actions_to_execute)
+    def execute(actions_to_execute) # rubocop:disable Metrices/MethodLength
       actions_to_execute.each do |action|
         result = send(action.to_sym)
 
