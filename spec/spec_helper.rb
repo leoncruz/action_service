@@ -15,6 +15,10 @@
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 ENV["RAILS_ENV"] = "test"
 
+require 'simplecov'
+SimpleCov.start
+SimpleCov.minimum_coverage 90
+
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require "rails/test_help"
 require 'action_service'

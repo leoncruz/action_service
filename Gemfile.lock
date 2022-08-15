@@ -233,6 +233,7 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rspec
   rubycritic
+  simplecov
   sqlite3
 
 BUNDLED WITH
