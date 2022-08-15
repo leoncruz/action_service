@@ -1,6 +1,6 @@
-![](https://github.com/leoncruz/action_service/actions/workflows/rubocop.yml/badge.svg)
-![](https://github.com/leoncruz/action_service/actions/workflows/rubycritc.yml/badge.svg)
-![](https://github.com/leoncruz/action_service/actions/workflows/tests.yml/badge.svg)
+![](https://github.com/leoncruz/action_service/workflows/Rubocop/badge.svg)
+![](https://github.com/leoncruz/action_service/workflows/Rubycritic/badge.svg)
+![](https://github.com/leoncruz/action_service/workflows/Tests/badge.svg)
 
 # ActionService
 Short description and motivation.
