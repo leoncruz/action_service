@@ -3,7 +3,7 @@
 ![](https://github.com/leoncruz/action_service/workflows/Tests/badge.svg)
 
 # ActionService
-Short description and motivation.
+A simple rails plugin to create Service Objects
 
 ## Usage
 How to use my plugin.
@@ -95,10 +95,18 @@ On service
 ```ruby
 faliure errors: user.errors
 ```
+Or
+```ruby
+faliure user_errors: user.errors
+```
 
 Getting the result
 ```ruby
 result.errors
+```
+Or
+```ruby
+result.user_errors
 ```
 The same happend to hash informed on **success** method
 
