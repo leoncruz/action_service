@@ -13,8 +13,8 @@ RSpec.describe ActionService::Result do
     end
   end
 
-  describe '#faliure?' do
-    it { expect { instance.faliure? }.to raise_error(NotImplementedError) }
+  describe '#failure?' do
+    it { expect { instance.failure? }.to raise_error(NotImplementedError) }
   end
 
   describe '#success?' do

@@ -3,14 +3,14 @@
 require 'action_service/result'
 
 module ActionService
-  # Faliure object of actions
-  class Faliure < Result
-    def faliure?
+  # Failure object of actions
+  class Failure < Result
+    def failure?
       true
     end
 
     def finish_on
-      faliure_on
+      failure_on
     end
   end
 end

@@ -7,16 +7,16 @@ module ActionService
   class Result
     include Attributes
 
-    attr_accessor :faliure_on, :finish_on
+    attr_accessor :failure_on, :finish_on
 
-    def initialize(result_hash, faliure_on: nil, finish_on: nil)
-      @faliure_on = faliure_on
+    def initialize(result_hash, failure_on: nil, finish_on: nil)
+      @failure_on = failure_on
       @finish_on = finish_on
 
       define_attr_reader_for_paramters result_hash
     end
 
-    def faliure?
+    def failure?
       raise NotImplementedError
     end
 

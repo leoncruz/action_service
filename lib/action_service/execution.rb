@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'action_service/success'
-require 'action_service/faliure'
+require 'action_service/failure'
 
 module ActionService
   # Module for execute actions from ActionService
@@ -13,8 +13,8 @@ module ActionService
         next if result.nil? || !result.is_a?(Result)
 
         case result
-        when Faliure
-          result.faliure_on = action
+        when Failure
+          result.failure_on = action
           result.finish_on = action
           break result
         when Success
@@ -25,8 +25,8 @@ module ActionService
       end
     end
 
-    def faliure(hash)
-      Faliure.new hash
+    def failure(hash)
+      Failure.new hash
     end
 
     def success(hash)

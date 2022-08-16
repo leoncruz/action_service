@@ -6,7 +6,7 @@ RSpec.describe ActionService::Execution do
       include ActionService::Execution
 
       def create_user
-        faliure error: true
+        failure error: true
       end
 
       def send_email
@@ -29,11 +29,11 @@ RSpec.describe ActionService::Execution do
       expect(instance).to have_received(:create_user)
     end
 
-    context 'when action return a Faliure instance' do
-      it 'has to fill faliure_on with action' do
+    context 'when action return a Failure instance' do
+      it 'has to fill failure_on with action' do
         result = instance.execute [:create_user]
 
-        expect(result.faliure_on).to eq(:create_user)
+        expect(result.failure_on).to eq(:create_user)
       end
 
       it 'has to fill finish_on with action' do
@@ -52,9 +52,9 @@ RSpec.describe ActionService::Execution do
     end
   end
 
-  describe '#faliure' do
-    it 'has to return a Faliure instance' do
-      expect(instance.faliure({})).to be_instance_of ActionService::Faliure
+  describe '#failure' do
+    it 'has to return a Failure instance' do
+      expect(instance.failure({})).to be_instance_of ActionService::Failure
     end
   end
 

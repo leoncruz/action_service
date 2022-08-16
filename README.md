@@ -36,7 +36,7 @@ class UserRegistration < ActionService::Base
   actions :create_user, :send_welcome_email
 
   def create_user
-    faliure errors: user.errors unless user.save
+    failure errors: user.errors unless user.save
   end
 
   def send_welcome_email
@@ -60,7 +60,7 @@ end
 
 4. Create methods
 
-5. When a faliure occours, calls a **faliure** method passing a hash as argument
+5. When a failure occours, calls a **failure** method passing a hash as argument
 
 6. For success, calls a **success** method passing a hash as argument as well
 
@@ -83,21 +83,22 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password)
   end
+end
 ```
 1. Use the **call** class method to execute and pass parameters
 
-2. You can use the hash argument passed for the **faliure** and **success** methods for getting information about your service
+2. You can use the hash argument passed for the **failure** and **success** methods for getting information about your service
 
 * The keys of hash become instance variables with your values
 
 On service
 
 ```ruby
-faliure errors: user.errors
+failure errors: user.errors
 ```
 Or
 ```ruby
-faliure user_errors: user.errors
+failure user_errors: user.errors
 ```
 
 Getting the result

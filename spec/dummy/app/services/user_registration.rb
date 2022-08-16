@@ -6,7 +6,7 @@ class UserRegistration < ActionService::Base
   actions :save_user, :send_welcome_email
 
   def save_user
-    faliure errors: user.errors unless user.save
+    failure errors: user.errors unless user.save
   end
 
   def send_welcome_email
